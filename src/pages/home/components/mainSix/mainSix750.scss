@@ -1,0 +1,109 @@
+@import "/src/pages/common/help.scss";
+@media screen and (max-width: 750px) {
+  .main-six {
+    .main-bg-wrap .first {
+      margin-top: px(-85);
+    }
+    .main-wrap {
+      .title {
+        font-size: 24px;
+        margin-bottom: 6px;
+        text-align: center;
+      }
+      .desc {
+        font-size: 16px;
+        margin-bottom: 27px;
+        text-align: center;
+      }
+      .hero-lists {
+        padding: 0 18px;
+        li {
+          margin-bottom: 10px;
+        }
+        .items-title {
+          height: 28px;
+          line-height: 28px;
+          text-align: center;
+          font-size: 14px;
+          background-color: $green;
+          color: #0e1c3a;
+        }
+        .img-wrap {
+          background-color: rgba(1, 27, 54, 0.8);
+          .img-item {
+            display: inline-block;
+            text-align: center;
+            .img {
+              width: 56px;
+              height: 56px;
+              margin-bottom: 9px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .img-name {
+              height: 16px;
+              line-height: 16px;
+              font-size: 12px;
+              color: #fff4d9;
+              text-align: center;
+            }
+          }
+        }
+        .two-items {
+          .img-wrap {
+            padding: 19px 18px 23px 18px;
+          }
+        }
+        .one-items {
+          .img-wrap {
+            padding: 19px 28px 23px 28px;
+          }
+        }
+        .three-items {
+          .img-wrap {
+            padding: 13px 44px 27px 44px;
+          }
+        }
+        .four-items {
+          .img-wrap {
+            padding: 19px 46px 27px 46px;
+          }
+        }
+      }
+      .ind-lists {
+        margin-top: 56px;
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            margin-left: 23px;
+            margin-right: 40px;
+          }
+        }
+        .right {
+          div {
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 12px;
+            margin-bottom: 19px;
+          }
+        }
+        .ind-lists-desc {
+          font-size: 16px;
+          color: #e1c1b9;
+          padding-top: 19px;
+          padding-left: 23px;
+          padding-right: 21px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "/src/pages/common/help.scss";
+@media screen and (max-width: 750px) {
+  .main-two {
+    .main-bg {
+      margin-top: px(-78);
+    }
+    .f-title {
+      margin-top: 261px;
+      font-size: 24px;
+      margin-bottom: 13px;
+    }
+    .s-title {
+      font-size: 16px;
+      margin-bottom: 21px;
+    }
+    .twitter-btn {
+      margin-bottom: 24px;
+    }
+  }
+}

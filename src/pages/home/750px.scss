@@ -1,0 +1,16 @@
+@import "/src/pages/common/help.scss";
+
+@media screen and (max-width: 750px) {
+  main {
+    position: relative;
+  }
+  .main-bg {
+    width: 100vw;
+  }
+  .main-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+  }
+}

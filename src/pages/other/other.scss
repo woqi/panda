@@ -1,0 +1,15 @@
+.other-container {
+  color: rgb(5, 243, 247);
+  main {
+    position: relative;
+    .wrap {
+      position: absolute;
+      top: 0;
+    }
+  }
+  .main-two .main-bg,
+  .main-three .main-bg,
+  .main-four .main-bg {
+    margin-top: -84px;
+  }
+}

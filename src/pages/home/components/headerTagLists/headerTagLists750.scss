@@ -1,0 +1,39 @@
+@import "/src/pages/common/help.scss";
+.header-right .tag-lists{
+  color: #fff;
+}
+@media screen and (min-width: 760px) {
+  .header-right .tag-lists{
+    margin-right: px2(50);
+    display: flex;
+    li:first-child{
+      color: $green;
+    }
+    li{
+      color: #fff;
+      font-size: px2(27);
+      margin-right: px2(30);
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-right .tag-lists {
+    background: linear-gradient(
+      180deg,
+      rgba(186, 80, 84, 0.48) 0%,
+      rgba(163, 76, 80, 0.85) 38%,
+      #994b4e 100%
+    );
+    opacity: 1;
+    position: absolute;
+    // z-index: 2;
+    width: 73px;
+    font-size: 8px;
+    right: px(-21);
+    top: px(32);
+    text-align: center;
+    li {
+      scale: 0.8;
+    }
+  }
+}

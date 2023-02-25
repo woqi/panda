@@ -1,0 +1,26 @@
+$green: #98cb9a;
+.home-container {
+  overflow-x: hidden;
+  header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    background: linear-gradient(
+      180deg,
+      rgba(186, 80, 84, 0.48) 0%,
+      rgba(163, 76, 80, 0.85) 38%,
+      #994b4e 100%
+    );
+    opacity: 1;
+    .header-left {
+      display: flex;
+      color: #ffffff;
+      align-items: center;
+    }
+  }
+  @import './1980px.scss';
+  @import './750px.scss';
+}

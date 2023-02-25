@@ -1,0 +1,99 @@
+@import "/src/pages/common/help.scss";
+@media screen and (max-width: 750px) {
+  .main-seven {
+    .main-bg-wrap {
+      .first {
+        margin-top: px(-190);
+      }
+      .second {
+        margin-top: px(-273);
+      }
+    }
+    .main-wrap {
+      .main-title {
+        margin-top: px(142);
+        margin-bottom: 9px;
+        text-align: center;
+        height: 29px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .main-sub-title {
+        text-align: center;
+        height: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 32px;
+      }
+      .hero-wrap {
+        padding-left: 18px;
+        padding-right: 18px;
+        .hero-item {
+          .title {
+            height: 27px;
+            font-size: 22px;
+            line-height: 27px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+          }
+          .sub-title {
+            height: 15px;
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 10px;
+          }
+          .desc {
+            width: 340px;
+            font-size: 16px;
+            color: #e1c1b9;
+            line-height: 30px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .ask-wrap {
+        .ask-title {
+          text-align: center;
+          font-size: 23px;
+          line-height: 29px;
+          margin-top: px(108);
+        }
+        .ask-sub-title {
+          text-align: center;
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 6px;
+          margin-bottom: 21px;
+        }
+        .ask-third-title:first-child {
+          margin-bottom: 0;
+        }
+        .ask-third-title {
+          text-align: center;
+          font-size: 22px;
+          line-height: 26px;
+          margin-bottom: 35px;
+        }
+        .ask-green-third-title {
+          text-align: center;
+          font-size: 16px;
+          color: $green;
+          margin-top: 25px;
+          // margin-bottom: 19px;
+        }
+        .ask-desc {
+          text-align: center;
+          font-size: 16px;
+          color: #e1c1b9;
+          line-height: 30px;
+          padding: 6px 12px 16px 12px;
+          margin-top: 9px;
+          margin-bottom: 19px;
+          margin-left: 18px;
+          margin-right: 18px;
+          background-color: rgba(1, 27, 54, 0.8);
+        }
+      }
+    }
+  }
+}

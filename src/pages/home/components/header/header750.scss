@@ -1,0 +1,81 @@
+@import "/src/pages/common/help.scss";
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(186, 80, 84, 0.48) 0%,
+    rgba(163, 76, 80, 0.85) 38%,
+    #994b4e 100%
+  );
+  opacity: 1;
+  .header-left {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 760px) {
+  .header {
+    height: 65px;
+    line-height: 65px;
+    padding-left: px2(60);
+    padding-right: px2(43);
+    .header-left {
+      font-size: 14px;
+      .img {
+        width: 46px;
+        height: 50px;
+        margin-right: 20px;
+      }
+      .title{
+        font-size: 32px;
+      }
+    }
+    .header-right {
+      .title-btn {
+        display: none;
+      }
+      .icon-lists {
+        display: flex;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .header {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 22px;
+    padding-right: 22px;
+    .header-left {
+      font-size: 14px;
+      .img {
+        width: 20px;
+        height: 22px;
+        margin-right: 10px;
+      }
+    }
+    .header-right {
+      position: relative;
+      .title-btn {
+        display: block;
+        width: 22px;
+        height: 22px;
+      }
+      .show {
+        display: block;
+      }
+      .hidden {
+        display: none;
+      }
+      .icon-lists {
+        display: none;
+      }
+    }
+  }
+}

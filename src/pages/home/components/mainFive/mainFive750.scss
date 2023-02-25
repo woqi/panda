@@ -1,0 +1,18 @@
+@import "/src/pages/common/help.scss";
+@media screen and (max-width: 750px) {
+  .main-five {
+    .main-bg {
+      margin-top: px(-73);
+    }
+    .title {
+      font-size: 24px;
+      margin-top: 139px;
+      margin-bottom: 34px;
+    }
+    .desc {
+      font-size: 14px;
+      color: #e1c1b9;
+      padding: 0 28px;
+    }
+  }
+}
