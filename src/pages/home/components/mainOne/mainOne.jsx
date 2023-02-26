@@ -1,21 +1,29 @@
-import React from "react"
-import "./mainOne750.scss"
+import React from 'react'
+import './mainOne750.scss'
 export default function mainOne() {
   return (
     <main className='main-one' id='about'>
+      <img className='big-main-bg' src='/src/assets/pc/main-bg.png' />
       <img className='main-bg' src='/src/assets/app/main-bg.png' />
       <div className='main-wrap'>
         <div className='title-wrap'>
-          <img className='main-logo' src='/src/assets/pc/logo-big.png' alt='logo' />
+          <img
+            className='main-logo'
+            src='/src/assets/pc/logo-big.png'
+            alt='logo'
+          />
           <p className='main-title'>
             PANDAPUNK 2169
-            <br />
+            <br className='pc-hidden' />
             MINT YOUR HEROS
           </p>
           <p className='main-sub-title'>TOTAL SUPPLY PANDARENs: 10,000 NFTs</p>
           <div className='main-th-title-wrap'>
-            <p className='main-th-title'>CONTRACT ADDRESS : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-            <img src='/src/assets/pc/copy.png' />
+            <p className='main-th-title'>
+              CONTRACT ADDRESS : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            </p>
+            <img className='copy' src='/src/assets/pc/copy.png' />
+            {/* src='/src/assets/pc/copy.png' */}
           </div>
         </div>
         <ul className='time-wrap'>
@@ -51,22 +59,27 @@ export default function mainOne() {
           </li>
         </ul>
         <div className='board-wrap'>
-          <div className='board flex flex-col'>
-            <div className='top flex flex-col'>
-              <div className='count-reg-wrap flex justify-between'>
+          <div className='board'>
+            <div className='top'>
+              <div className='count-reg-wrap flex'>
                 <div className='count-wrap flex'>
                   <div className='reduce'>-</div>
                   <div className='num'>10</div>
                   <div className='add'>+</div>
                 </div>
-                <p className='reg'>10 Max</p>
+                <p className='reg pc-hidden'>10 Max</p>
               </div>
-              <p className='total flex'>
+                <p className='reg app-hidden'>10 Max</p>
+                <p className='total flex app-hidden'>
+                  TOTAL : <span className='green-num'>0.1</span>
+                  ETH
+                </p>
+              <p className='total flex pc-hidden'>
                 TOTAL : <span className='green-num'>0.1</span>
                 ETH
               </p>
             </div>
-            <div className='bottom flex flex-col items-center'>
+            <div className='bottom'>
               <p className='opt flex'>
                 OPPORTUNITY :<span className='green-t'>X</span>
                 Legendary &<span className='green-t'>X</span>

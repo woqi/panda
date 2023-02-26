@@ -18,6 +18,7 @@
 }
 @media screen and (max-width: 750px) {
   .header-right .tag-lists {
+    position: absolute;
     background: linear-gradient(
       180deg,
       rgba(186, 80, 84, 0.48) 0%,
@@ -25,7 +26,7 @@
       #994b4e 100%
     );
     opacity: 1;
-    position: absolute;
+    
     // z-index: 2;
     width: 73px;
     font-size: 8px;

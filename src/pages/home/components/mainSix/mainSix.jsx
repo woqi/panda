@@ -1,18 +1,27 @@
-import React from "react"
-import "./mainSix750.scss"
-import {heroLists} from '@pages/common/base-mock'
+import React from 'react'
+import './mainSix750.scss'
+import { heroLists } from '@pages/common/base-mock'
+import HeroLists from '../heroLists/heroLists'
 export default function mainSix() {
   return (
     <main className='main-six'>
-      <div className='main-bg-wrap'>
+      <div className='main-bg-wrap app-hidden'>
+        <img className='big-main-bg' src='/src/assets/pc/main-bg6.png' />
+        <img className='big-main-bg' src='/src/assets/pc/main-bg6.2.png' />
+      </div>
+
+      <div className='main-bg-wrap pc-hidden'>
         <img className='main-bg first' src='/src/assets/app/main-bg6.1.png' />
         <img className='main-bg' src='/src/assets/app/main-bg6.2.png' />
         <img className='main-bg' src='/src/assets/app/main-bg6.3.png' />
       </div>
-      <div className='main-wrap'>
-        <div id='ecosystem' className='title'>ECOSYSTEM</div>
+      <div className='main-wrap '>
+        <div id='ecosystem' className='title'>
+          ECOSYSTEM
+        </div>
         <p className='desc'>HERO NFTS</p>
-        <ul className='hero-lists'>
+        <HeroLists></HeroLists>
+        <ul className='hero-lists pc-hidden'>
           <li className='one-items'>
             <div className='items-title'>{heroLists[0].name}</div>
             <ul className='img-wrap grid grid-cols-4 gap-5'>
@@ -20,7 +29,9 @@ export default function mainSix() {
                 <li className='img-item' key={s}>
                   <img
                     className='img'
-                    src={`/src/assets/heros/${heroLists[0].imgBaseUrl}${si + 1}.png`}
+                    src={`/src/assets/heros/${heroLists[0].imgBaseUrl}${
+                      si + 1
+                    }.png`}
                   />
                   <p className='img-name'>{s}</p>
                 </li>
@@ -35,7 +46,9 @@ export default function mainSix() {
                   <li className='img-item' key={s}>
                     <img
                       className='img'
-                      src={`/src/assets/heros/${heroLists[1].imgBaseUrl}${si + 1}.png`}
+                      src={`/src/assets/heros/${heroLists[1].imgBaseUrl}${
+                        si + 1
+                      }.png`}
                     />
                     <p className='img-name'>{s}</p>
                   </li>
@@ -49,7 +62,9 @@ export default function mainSix() {
                   <li className='img-item' key={s}>
                     <img
                       className='img'
-                      src={`/src/assets/heros/${heroLists[2].imgBaseUrl}${si + 1}.png`}
+                      src={`/src/assets/heros/${heroLists[2].imgBaseUrl}${
+                        si + 1
+                      }.png`}
                     />
                     <p className='img-name'>{s}</p>
                   </li>
@@ -65,7 +80,9 @@ export default function mainSix() {
                 <li className='img-item' key={s}>
                   <img
                     className='img'
-                    src={`/src/assets/heros/${heroLists[3].imgBaseUrl}${si + 1}.png`}
+                    src={`/src/assets/heros/${heroLists[3].imgBaseUrl}${
+                      si + 1
+                    }.png`}
                   />
                   <p className='img-name'>{s}</p>
                 </li>
@@ -80,13 +97,16 @@ export default function mainSix() {
                 <li className='img-item' key={s}>
                   <img
                     className='img'
-                    src={`/src/assets/heros/${heroLists[4].imgBaseUrl}${si + 1}.png`}
+                    src={`/src/assets/heros/${heroLists[4].imgBaseUrl}${
+                      si + 1
+                    }.png`}
                   />
                   <p className='img-name'>{s}</p>
                 </li>
               ))}
             </ul>
           </li>
+
           <li className='four-items'>
             <div className='items-title'>{heroLists[5].name}</div>
             <ul className='img-wrap grid grid-cols-3 gap-x-10 gap-y-5'>
@@ -94,7 +114,9 @@ export default function mainSix() {
                 <li className='img-item' key={s}>
                   <img
                     className='img'
-                    src={`/src/assets/heros/${heroLists[5].imgBaseUrl}${si + 1}.png`}
+                    src={`/src/assets/heros/${heroLists[5].imgBaseUrl}${
+                      si + 1
+                    }.png`}
                   />
                   <p className='img-name'>{s}</p>
                 </li>
@@ -112,9 +134,10 @@ export default function mainSix() {
               </div>
             </div>
             <div className='ind-lists-desc'>
-              Palladium ore , the main mineral resource driving panda punk civilization. Mechanics
-              masters made a leap in technology by refining and processing palladium. Palladium ore
-              is very expensive and rare.PPP can use to buy the land building and weapons of
+              Palladium ore , the main mineral resource driving panda punk
+              civilization. Mechanics masters made a leap in technology by
+              refining and processing palladium. Palladium ore is very expensive
+              and rare.PPP can use to buy the land building and weapons of
               PandaPunk 2169 Metaverse.
             </div>
           </li>
@@ -127,9 +150,9 @@ export default function mainSix() {
               </div>
             </div>
             <div className='ind-lists-desc'>
-              Panda Punk Token , PPT will be used as the main circulation certificate in the Panda
-              Punk Universe. Pandarens can be exchanged PPT in exchanges, and can also be rewarded
-              by holding NFT and PPP.
+              Panda Punk Token , PPT will be used as the main circulation
+              certificate in the Panda Punk Universe. Pandarens can be exchanged
+              PPT in exchanges, and can also be rewarded by holding NFT and PPP.
             </div>
           </li>
         </ul>

@@ -1,3 +1,6 @@
 a:active {
   color: transparent ;
 }
+li{
+  list-style: none;
+}

@@ -1,0 +1,30 @@
+@import '/src/pages/common/help.scss';
+@media screen and (min-width: 760px) {
+  .main-five {
+    .big-main-bg {
+      margin-top: px2(-220);
+    }
+    .main-wrap {
+      display: flex;
+      align-items: center;
+    }
+    .title {
+      font-size: px2(50);
+      // margin-top: px2(432);
+      margin-bottom: px2(30);
+    }
+    .desc {
+      font-size: px2(16);
+      color: #e1c1b9;
+      width: px2(808);
+    }
+    .vision-desc-wrap {
+      margin-left: px2(207);
+    }
+    .big-hero {
+      padding-top: px2(70);
+      height: px2(1210);
+      height: px2(1111);
+    }
+  }
+}

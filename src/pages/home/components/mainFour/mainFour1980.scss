@@ -1,0 +1,61 @@
+@import '/src/pages/common/help.scss';
+@media screen and (min-width: 760px) {
+  .main-four {
+    .big-main-bg {
+      margin-top: px2(-105);
+    }
+    .main-wrap {
+      padding-top: 232px;
+    }
+    .light-wrap,
+    .dark-wrap {
+      position: relative;
+      .text-wrap {
+        position: absolute;
+        line-height: px2(38);
+        .desc {
+          font-size: 14px;
+          color: #f5e1dc;
+          // width: 252px;
+          padding-left: 8px;
+        }
+      }
+    }
+    .light-wrap {
+      margin-bottom: 14px;
+      .text-wrap {
+        margin-left: px2(120);
+      }
+    }
+    .title {
+      text-align: center;
+      font-size: px2(50);
+      margin-bottom: 29px;
+      padding-left: px2(384);
+    }
+    .history-lists {
+      margin-top: px2(33);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      color: #f5e1dc;
+      .history-item {
+        position: relative;
+        display: flex;
+        margin-bottom: 15px;
+      }
+      .top {
+        margin-bottom: 5px;
+        height: 36px;
+      }
+      .bottom {
+        position: absolute;
+        white-space: nowrap;
+        line-height: 36px;
+        font-size: 14px;
+        margin-left: px2(100);
+      }
+    }
+  }
+}

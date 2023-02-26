@@ -1,0 +1,53 @@
+@import '/src/pages/common/help.scss';
+@media screen and (min-width: 760px) {
+  .main-three {
+    .big-main-bg {
+      margin-top: px2(-125);
+    }
+    .main-wrap {
+      padding-top: 173px;
+    }
+    .title {
+      font-size: px2(60);
+      text-align: center;
+    }
+    .ava-lists-wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+    }
+    .ava-lists {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      gap: px2(29);
+      width: 100%;
+      margin-top: px2(195);
+      li {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .ava-item {
+        width: px2(130);
+        height: px2(130);
+      }
+    }
+    .r-l-wrap {
+      position: relative;
+      justify-content: space-between;
+      bottom: px2(700);
+      width: 100%;
+      img {
+        width: px2(824);
+        height: px2(824);
+      }
+      .left {
+        position: absolute;
+        left: px2(-150);
+      }
+      .right {
+        position: absolute;
+        right: px2(-150);
+      }
+    }
+  }
+}

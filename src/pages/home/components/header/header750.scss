@@ -1,4 +1,4 @@
-@import "/src/pages/common/help.scss";
+@import '/src/pages/common/help.scss';
 .header {
   display: flex;
   position: fixed;
@@ -32,16 +32,24 @@
         height: 50px;
         margin-right: 20px;
       }
-      .title{
-        font-size: 32px;
+      .title {
+        font-size: px2(32);
       }
     }
     .header-right {
+      display: flex;
+      align-items: center;
       .title-btn {
         display: none;
       }
       .icon-lists {
         display: flex;
+        li:last-child {
+          margin-right: 0;
+        }
+        li {
+          margin-right: 12px;
+        }
       }
     }
   }

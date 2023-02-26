@@ -6,10 +6,13 @@ export default function mainFour() {
   return (
     <main className='main-four'>
       <img className='main-bg' src='/src/assets/app/main-bg4.png' />
+      <img className='big-main-bg' src='/src/assets/pc/main-bg4.png' />
       <div className='main-wrap '>
         <p className='title'>THE HISTORY OF PANDARENS.</p>
         <div className='light-wrap flex flex-col items-center justify-center'>
-          <img src='/src/assets/app/light.png' />
+          <img className="pc-hidden" src='/src/assets/app/light.png' />
+          <img className="app-hidden" src='/src/assets/app/dark.png' />
+
           <div className='text-wrap flex'>
             <span className='green-t self-start'>LIGHT:</span>
             <span className='desc'>Friendship Trade and Cooperation whit other planets.</span>
@@ -24,7 +27,7 @@ export default function mainFour() {
         </div>
         <ul className='history-lists'>
           {historyLists.map((h, hi) => (
-            <li className='history-item flex flex-col items-center justify-center' key={h.title}>
+            <li className='history-item' key={h.title}>
               <img className='top' src={`/src/assets/history/${hi + 1}.png`} />
               <div className='bottom'>{h.desc}</div>
             </li>

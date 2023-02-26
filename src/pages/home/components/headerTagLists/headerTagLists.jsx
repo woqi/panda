@@ -4,10 +4,6 @@ export default function headerTagLists({ show }) {
   const [clientWidth, setClientWidth] = useState(0)
   useEffect(() => {
     setClientWidth(document.documentElement.clientWidth)
-    return () => {
-      // second
-    }
-    // third
   }, [clientWidth])
 
   return (

@@ -1,4 +1,5 @@
 @import "/src/pages/common/help.scss";
+@import'./mainFour1980.scss';
 @media screen and (max-width: 750px) {
   .main-four {
     .main-bg {
@@ -42,6 +43,10 @@
       overflow: hidden;
       color: #f5e1dc;
       .history-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 15px;
       }
       .top {

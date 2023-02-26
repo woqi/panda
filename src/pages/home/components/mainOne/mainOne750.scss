@@ -1,4 +1,22 @@
 @import "/src/pages/common/help.scss";
+@import'./mainOne1980.scss';
+.main-one {
+  // .copy{
+  //   vertical-align:middle;
+  //   background: url('/src/assets/pc/copy.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   font-size: 0;
+  // }
+  // .copy:hover{
+  //   background: url('/src/assets/pc/copyhover.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+
+  // }
+}
 @media screen and (max-width: 750px) {
   .main-one {
     .title-wrap {
@@ -14,11 +32,14 @@
       }
       .main-title {
         font-family: Videopac-Regular, Videopac;
+        text-align: center;
+        width: px(250);
         color: #ffffff;
         font-size: 24px;
         line-height: 29px;
         height: 58px;
         letter-spacing: 0px;
+        overflow:hidden;
       }
       .main-sub-title {
         margin-top: 9px;
@@ -125,6 +146,9 @@
         background-color: #011b36;
         color: #ffffff;
         padding-top: 13px;
+        .count-reg-wrap {
+          justify-content: center;
+        }
         .count-wrap {
           margin-right: 95px;
           align-items: center;
@@ -159,12 +183,17 @@
           .total {
             margin-top: 13px;
             font-size: 20px;
+            text-align: center;
+            justify-content: center;
             .green-num {
               color: $green;
             }
           }
         }
         .bottom {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           font-size: 12px;
           margin-top: 9px;
           margin-bottom: 10px;

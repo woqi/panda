@@ -1,6 +1,6 @@
-$green: #98cb9a;
+@import '/src/pages/common/help.scss';
 .home-container {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   header {
     display: flex;
     position: fixed;
@@ -21,6 +21,40 @@ $green: #98cb9a;
       align-items: center;
     }
   }
-  @import './1980px.scss';
-  @import './750px.scss';
+  main {
+    position: relative;
+  }
+  .main-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+  }
+  @media screen and (min-width: 760px) {
+    .big-main-bg {
+      width: 100%;
+    }
+    .main-bg,.pc-hidden {
+      display: none;
+    }
+    .main-wrap {
+      z-index: 2;
+    }
+    
+  }
+  @media screen and (max-width: 750px) {
+    .home-container {
+      overflow-x: auto;
+    }
+    .big-main-bg {
+      display: none;
+    }
+    .main-bg {
+      width: 100vw;
+    }
+    .app-hidden{
+      display: none;
+    }
+  }
 }
+

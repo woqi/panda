@@ -16,6 +16,7 @@ export default function header() {
           className='title-btn'
           src='/src/assets/pc/more.png'
           onClick={() => {
+            console.log('dsada')
             const cur = showTitle
             setShowTitle(!cur)
           }}

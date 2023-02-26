@@ -1,4 +1,5 @@
-@import "/src/pages/common/help.scss";
+@import '/src/pages/common/help.scss';
+@import './mainThree1980.scss';
 @media screen and (max-width: 750px) {
   .main-three {
     .main-bg {
@@ -17,33 +18,32 @@
       width: 100%;
     }
     .ava-lists {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: px(23);
       width: 100%;
-      overflow: hidden;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 65px;
+      margin-top: px(65);
       .ava-item {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 23px;
+        width: px(100);
+        height: px(100);
       }
     }
     .r-l-wrap {
       position: relative;
       justify-content: space-between;
-      top: -114px;
+      top: px(-80);
       width: 100%;
       img {
-        width: 240px;
-        height: 240px;
+        width: px(240);
+        height: px(240);
       }
       .left {
         position: absolute;
-        left: -84px;
+        left: px(-84);
       }
       .right {
         position: absolute;
-        right: -84px;
+        right: px(-84);
       }
     }
   }

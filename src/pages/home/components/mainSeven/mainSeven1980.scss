@@ -1,0 +1,95 @@
+@import '/src/pages/common/help.scss';
+
+@media screen and (min-width: 760px) {
+  .main-seven {
+    .main-bg-wrap {
+      .first {
+        margin-top: px2(-260);
+      }
+      .second {
+        margin-top: px2(-245);
+      }
+    }
+    .main-wrap {
+      .main-title {
+        margin-top: px2(200);
+        margin-bottom: 18px;
+        text-align: center;
+        font-size: px2(50);
+      }
+      .main-sub-title {
+        text-align: center;
+        font-size: px2(28);
+        margin-bottom: px2(80);
+      }
+      .hero-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: px2(40);
+        .hero-item {
+          margin-left: auto;
+          margin-right: auto;
+          .hero-img {
+            width: px2(486);
+            height: px2(486);
+          }
+          .title {
+            font-size: px2(36);
+            margin-top: px2(32);
+            margin-bottom: 8px;
+          }
+          .sub-title {
+            font-size: px2(24);
+            margin-bottom: 10px;
+          }
+          .desc {
+            width: 340px;
+            font-size: px2(22);
+            color: #e1c1b9;
+            line-height: 30px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .ask-wrap {
+        .ask-title {
+          text-align: center;
+          font-size: px2(50);
+          margin-top: px2(50);
+        }
+        .ask-sub-title {
+          text-align: center;
+          font-size: px2(22);
+          margin-top: px2(19);
+          margin-bottom: px2(64);
+        }
+        .ask-third-title:first-child {
+          margin-bottom: 0;
+        }
+        .ask-third-title {
+          text-align: center;
+          font-size: px2(30);
+          margin-bottom: 35px;
+        }
+        .ask-green-third-title {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: px2(40);
+        }
+        .ask-desc {
+          width: px2(798);
+          text-align: center;
+          font-size: px2(16);
+          color: #e1c1b9;
+          line-height: px2(37);
+          padding: 10px 25px 13px 10px;
+          margin-top: 4px;
+          margin-bottom: 22px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: rgba(1, 27, 54, 0.8);
+        }
+      }
+    }
+  }
+}
