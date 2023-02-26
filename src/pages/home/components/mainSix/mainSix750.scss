@@ -52,8 +52,15 @@
         }
         .two-items {
           .img-wrap {
-            padding: 19px 18px 23px 18px;
+            column-gap: px(20);
+            padding: 19px 17px 23px 18px;
           }
+        }
+        .gap-40px {
+          column-gap: px(40);
+        }
+        .gap-6px {
+          column-gap: px(6);
         }
         .one-items {
           .img-wrap {
@@ -62,7 +69,7 @@
         }
         .three-items {
           .img-wrap {
-            padding: 13px 44px 27px 44px;
+            padding: px(13) px(44) px(27) px(44);
           }
         }
         .four-items {
